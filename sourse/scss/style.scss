@@ -1,0 +1,42 @@
+@import "ui.scss";
+@import "header.scss";
+@import "generation.scss";
+@import "brands.scss";
+@import "slider.scss";
+@import "shop.scss";
+@import "subscribe.scss";
+@import "footer.scss";
+
+.container{
+	max-width: 1130px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+}
+.page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	@include flexbox();
+	flex-direction: column;
+}
+.main-screen {
+	flex: 1 0 100%;
+	position: relative;
+	&__bg {
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		top: 0;
+		left: 0;
+	}
+}
+
+.content{
+	font-size: 20px;
+}
